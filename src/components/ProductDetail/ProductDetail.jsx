@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { products } from '../../db/db';
 import './ProductDetail.css'
 
@@ -25,7 +25,9 @@ const ProductDetail = () => {
 
   return (
     <div className='details'>
+       <Link to={"/"} className='back'>Back</Link>
       <div className="container">
+    
         <div className="image">
             <img src={data.image} alt="" />
         </div>
