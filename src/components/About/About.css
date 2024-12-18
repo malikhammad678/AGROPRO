@@ -1,0 +1,77 @@
+.about {
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-top: 2rem;
+}
+.about  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem ;
+}
+.about .left {
+    max-width: 48%;
+    width: 100%;
+}
+.about .left h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(10, 118, 0, 0.906);
+}
+.about .left h1 {
+    font-size: 3rem;
+    margin: .3rem 0;
+    color: rgba(0,0,0,.5);
+   
+}
+.about .left button {
+    padding: 10px 22px;
+    background: rgba(10, 118, 0, 0.906);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+    margin-top: 1.5rem;
+}
+.about .right {
+    max-width: 48%;
+    width: 100%;
+    position: relative;
+}
+.about .right img:nth-child(1){
+  width:100%;
+    
+}
+
+@media (max-width:768px){
+    .about {
+        padding-inline: .7rem;
+    }
+}
+
+@media (max-width:1000px){
+    .about{
+        flex-direction: column;
+        padding-block: 5rem;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    .about .left {
+        max-width: 100%;
+        width: 100%;
+    }
+    .about .right {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+    html {
+        font-size: 85%;
+    }
+    .about {
+        padding-top: 7rem;
+    }
+}

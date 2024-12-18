@@ -1,0 +1,44 @@
+.products{
+    min-height: 100vh;
+    padding-inline: 2rem;
+    padding-top: 6rem;
+}
+.products h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(10, 118, 0, 0.906);
+}
+.products h1 {
+    font-size: 3rem;
+    margin: .3rem 0;
+    color: rgba(0,0,0,.5);
+}
+.products .box_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.products .box_container .box {
+    padding: 10px;
+    background: #eee;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+}
+.products .box_container .box img {
+    width: 100%;
+}
+h2 {
+    font-weight: 500;
+    color: #333;
+    margin: .4rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+    .products{
+        padding-inline: .7rem;
+    }
+}
